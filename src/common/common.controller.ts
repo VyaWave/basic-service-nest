@@ -6,9 +6,14 @@ import {
   Post,
   HttpCode,
   Header,
+  Body,
   Redirect,
 } from '@nestjs/common';
 import { Request } from 'express';
+
+import { CommonService } from './common.service';
+
+import { CommonInterface } from './common.interface';
 
 const svgCode = `
 <svg xmlns="http://www.w3.org/2000/svg" aria-label="Calendar" role="img" viewBox="0 0 512 512">
@@ -34,17 +39,25 @@ const svgCode = `
 `;
 
 @Controller('common')
-export class CatsController {
+export class CommonController {
+  constructor(private Service: CommonService) {}
+
   @Get('all')
   @HttpCode(200)
   findAll(@Req() request: Request): string {
     return 'This action returns all cats';
   }
 
+  @Get('/index')
+  @HttpCode(200)
+  index(@Req() request: Request): string {
+    return 'This action returns all cats';
+  }
+
   @Post('create')
   @HttpCode(200)
-  create(): string {
-    return 'This action adds a new cat';
+  create(@Body() commonItem: CommonInterface): void {
+    return this.Service.create(commonItem);
   }
 
   @Get('redirect')
