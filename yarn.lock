@@ -646,6 +646,11 @@
     tslib "2.3.1"
     uuid "8.3.2"
 
+"@nestjs/mapped-types@*":
+  version "1.0.1"
+  resolved "http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2F%40nestjs%2Fmapped-types%2F-%2Fmapped-types-1.0.1.tgz#78b62041c7a407db4a90eb140567321602bed18e"
+  integrity sha1-eLYgQcekB9tKkOsUBWcyFgK+0Y4=
+
 "@nestjs/platform-express@^8.0.0":
   version "8.3.1"
   resolved "https://registry.npmjs.org/@nestjs/platform-express/-/platform-express-8.3.1.tgz#fbf129cbdc56f2fbb17758df4971162de79e2265"
@@ -4047,6 +4052,11 @@ netmask@^2.0.1:
   version "2.0.2"
   resolved "https://registry.npmjs.org/netmask/-/netmask-2.0.2.tgz#8b01a07644065d536383835823bc52004ebac5e7"
   integrity sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==
+
+node-color-log@^7.0.0:
+  version "7.0.0"
+  resolved "http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/node-color-log/-/node-color-log-7.0.0.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fnode-color-log%2F-%2Fnode-color-log-7.0.0.tgz#09c2dc0176dc852593fd92113b309ece8dd4cd02"
+  integrity sha1-CcLcAXbchSWT/ZIROzCezo3UzQI=
 
 node-emoji@1.11.0:
   version "1.11.0"
