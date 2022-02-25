@@ -1,13 +1,25 @@
+// https://docs.nestjs.cn/8/techniques?id=%e6%95%b0%e6%8d%ae%e5%ba%93
 import { Module } from '@nestjs/common';
 import { APP_FILTER } from '@nestjs/core';
-import { UsersModule, CommonModule } from './modules/index';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { Connection } from 'typeorm';
+
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
+import { UsersModule, CommonModule } from './modules/index';
 import { HelperModule } from './modules/helper/helper.module';
 import { AllExceptionsFilter } from './filters/any-exception/any-exception.filter';
 
 @Module({
-  imports: [CommonModule, UsersModule, HelperModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      retryAttempts: 10,
+      retryDelay: 3000,
+    }),
+    CommonModule,
+    UsersModule,
+    HelperModule,
+  ],
   controllers: [AppController],
   providers: [
     AppService,
@@ -17,4 +29,6 @@ import { AllExceptionsFilter } from './filters/any-exception/any-exception.filte
     },
   ],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private readonly connection: Connection) {}
+}

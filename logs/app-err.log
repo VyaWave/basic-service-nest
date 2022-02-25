@@ -1,0 +1,272 @@
+[31m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +4ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}
+[31m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::6668[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::6668
+    at Server.setupListenHandle [as _listen2] (net.js:1316:16)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at ExpressAdapter.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/platform-express/adapters/express-adapter.js:57:32)
+    at /Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:167:46
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/weiya/Documents/My-Space/basic-service-nest/node_modules/@nestjs/core/nest-application.js:156:16)
+    at bootstrap (/Users/weiya/Documents/My-Space/basic-service-nest/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 6668
+}

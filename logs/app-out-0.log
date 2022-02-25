@@ -1,0 +1,30 @@
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCommonModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHelperModule dependencies initialized[39m[38;5;3m +0ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on: http://127.0.0.1:8000
+Server is start on: http://localhost:8000
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCommonController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/index, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHelperController {/helper}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/helper, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/helper, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/helper/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/helper/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/helper/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 97171  - [39m2022-02-24 6:35:52 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m

@@ -1,0 +1,234 @@
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:3000
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 52037  - [39m2022-02-22 7:02:51 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62440  - [39m2022-02-22 7:05:50 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62672  - [39m2022-02-22 7:05:53 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62746  - [39m2022-02-22 7:05:56 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 62922  - [39m2022-02-22 7:06:00 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63013  - [39m2022-02-22 7:06:03 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +12ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63189  - [39m2022-02-22 7:06:06 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63389  - [39m2022-02-22 7:06:09 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63451  - [39m2022-02-22 7:06:12 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63633  - [39m2022-02-22 7:06:15 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +12ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63818  - [39m2022-02-22 7:06:18 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 63995  - [39m2022-02-22 7:06:21 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64194  - [39m2022-02-22 7:06:24 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64595  - [39m2022-02-22 7:06:28 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +16ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64780  - [39m2022-02-22 7:06:31 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +20ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +10ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 64847  - [39m2022-02-22 7:06:34 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +9ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 65099  - [39m2022-02-22 7:06:37 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================
+Server is start on http://127.0.0.1:6668
+================= 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ======================
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCatsController {/common}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/all, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/redirect, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/common/calendar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 65281  - [39m2022-02-22 7:06:40 ├F10: PM┤ [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m

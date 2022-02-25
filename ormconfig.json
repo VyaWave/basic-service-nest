@@ -1,0 +1,31 @@
+{
+  "type": "mysql",
+  "synchronize": true,
+  "logging": false,
+  "dialect": "mysql",
+  "host": "10.190.5.115",
+  "port": 3306,
+  "database": "nest_test",
+  "password": "wQ,RWD*D)3h-@ac",
+  "username": "root",
+  "timezone": "+08:00",
+  "pool": {
+    "max": 5,
+    "min": 0,
+    "acquire": 30000,
+    "idle": 10000
+  },
+  "define": {
+    "timestamps": true,
+    "charset": "utf8"
+  },
+  "operatorsAliases": {},
+  "entities": ["src/modules/**/*.entity.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
