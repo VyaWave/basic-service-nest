@@ -17,7 +17,6 @@ const typeorm_2 = require("typeorm");
 const app_service_1 = require("./app.service");
 const app_controller_1 = require("./app.controller");
 const index_1 = require("./modules/index");
-const helper_module_1 = require("./modules/helper/helper.module");
 const any_exception_filter_1 = require("./filters/any-exception/any-exception.filter");
 let AppModule = class AppModule {
     constructor(connection) {
@@ -30,10 +29,10 @@ AppModule = __decorate([
             typeorm_1.TypeOrmModule.forRoot({
                 retryAttempts: 10,
                 retryDelay: 3000,
+                autoLoadEntities: true,
             }),
             index_1.CommonModule,
             index_1.UsersModule,
-            helper_module_1.HelperModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [

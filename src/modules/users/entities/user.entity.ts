@@ -1,4 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, PrimaryColumn, Column } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  PrimaryColumn,
+  Column,
+  OneToMany,
+} from 'typeorm';
 
 @Entity()
 export class User {
@@ -14,4 +20,10 @@ export class User {
 
   @Column()
   age: number;
+
+  @Column({ default: true })
+  isActive: boolean;
+
+  // @OneToMany((type) => Photo, (photo) => photo.user)
+  // photos: Photo[];
 }

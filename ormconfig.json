@@ -1,6 +1,5 @@
 {
   "type": "mysql",
-  "synchronize": true,
   "logging": false,
   "dialect": "mysql",
   "host": "10.190.5.115",
@@ -20,12 +19,6 @@
     "charset": "utf8"
   },
   "operatorsAliases": {},
-  "entities": ["src/modules/**/*.entity.ts"],
-  "migrations": ["src/migration/**/*.ts"],
-  "subscribers": ["src/subscriber/**/*.ts"],
-  "cli": {
-    "entitiesDir": "src/entity",
-    "migrationsDir": "src/migration",
-    "subscribersDir": "src/subscriber"
-  }
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": true
 }

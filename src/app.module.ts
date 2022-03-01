@@ -7,7 +7,6 @@ import { Connection } from 'typeorm';
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { UsersModule, CommonModule } from './modules/index';
-import { HelperModule } from './modules/helper/helper.module';
 import { AllExceptionsFilter } from './filters/any-exception/any-exception.filter';
 
 @Module({
@@ -15,10 +14,10 @@ import { AllExceptionsFilter } from './filters/any-exception/any-exception.filte
     TypeOrmModule.forRoot({
       retryAttempts: 10,
       retryDelay: 3000,
+      autoLoadEntities: true,
     }),
     CommonModule,
     UsersModule,
-    HelperModule,
   ],
   controllers: [AppController],
   providers: [

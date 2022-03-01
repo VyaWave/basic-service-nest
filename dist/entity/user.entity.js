@@ -9,29 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Helper = void 0;
+exports.User = void 0;
 const typeorm_1 = require("typeorm");
-let Helper = class Helper {
+let User = class User {
 };
 __decorate([
     (0, typeorm_1.PrimaryColumn)(),
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], Helper.prototype, "id", void 0);
+], User.prototype, "id", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Helper.prototype, "firstName", void 0);
+], User.prototype, "firstName", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Helper.prototype, "lastName", void 0);
+], User.prototype, "lastName", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", Number)
-], Helper.prototype, "age", void 0);
-Helper = __decorate([
+], User.prototype, "age", void 0);
+User = __decorate([
     (0, typeorm_1.Entity)()
-], Helper);
-exports.Helper = Helper;
-//# sourceMappingURL=helper.entity.js.map
+], User);
+exports.User = User;
+//# sourceMappingURL=user.entity.js.map
