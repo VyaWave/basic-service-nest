@@ -10,6 +10,6 @@ export function logger(req: Request, res: Response, next: () => void): void {
   next();
 
   nodeLogColor.info(
-    `======== [Request Out] URL: ${req.url} Code: ${res.statusCode} Method: ${req.method}  ========`,
+    `======== [Request Out] URL: ${req.url} Code: ${res.statusCode} Method: ${req.method} ========`,
   );
 }

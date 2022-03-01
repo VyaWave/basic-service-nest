@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core';
+
 import { AppModule } from './app.module';
 import { logger } from './middleware/logger/logger.middleware';
 
@@ -7,7 +8,11 @@ async function bootstrap() {
     cors: true,
   });
 
+  // 全局中间件
   app.use(logger);
+
+  // 全局通道
+  // app.useGlobalPipes(new ValidatePipe());
 
   const port = 8001;
 

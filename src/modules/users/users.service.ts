@@ -21,23 +21,11 @@ export class UsersService {
     return this.usersRepository.findOne(id);
   }
 
-  findAll(pager: { page: number; size: number }): Promise<{
-    data: User[];
-    code: number;
-    message: string;
-  }> {
-    return this.usersRepository
-      .find({
-        skip: pager.page - 1,
-        take: pager.size,
-      })
-      .then((users) => {
-        return {
-          data: users,
-          code: 200,
-          message: 'success',
-        };
-      });
+  findAll(pager: { page: number; size: number }): Promise<User[]> {
+    return this.usersRepository.find({
+      skip: pager.page - 1,
+      take: pager.size,
+    });
   }
 
   remove(id: string): Promise<any> {
