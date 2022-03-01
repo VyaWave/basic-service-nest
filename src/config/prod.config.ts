@@ -4,7 +4,7 @@ export default {
   mysql: {
     type: 'mysql' as sqlType,
     logging: false,
-    host: '39.106.163.208',
+    host: '127.0.0.1',
     port: 3306,
     database: 'basic_service_mysql',
     password: '123456',
