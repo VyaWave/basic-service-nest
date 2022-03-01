@@ -4,6 +4,9 @@ import {
   PrimaryColumn,
   Column,
   OneToMany,
+  CreateDateColumn,
+  UpdateDateColumn,
+  VersionColumn,
 } from 'typeorm';
 
 @Entity()
@@ -23,6 +26,15 @@ export class User {
 
   @Column({ default: true })
   isActive: boolean;
+
+  @CreateDateColumn()
+  createdDate: string;
+
+  @UpdateDateColumn()
+  updateDate: string;
+
+  @VersionColumn()
+  version: string;
 
   // @OneToMany((type) => Photo, (photo) => photo.user)
   // photos: Photo[];

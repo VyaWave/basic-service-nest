@@ -18,6 +18,8 @@ const app_service_1 = require("./app.service");
 const app_controller_1 = require("./app.controller");
 const index_1 = require("./modules/index");
 const any_exception_filter_1 = require("./filters/any-exception/any-exception.filter");
+const index_2 = require("./config/index");
+const mysqlCfg = index_2.default.mysql;
 let AppModule = class AppModule {
     constructor(connection) {
         this.connection = connection;
@@ -25,15 +27,7 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [
-            typeorm_1.TypeOrmModule.forRoot({
-                retryAttempts: 10,
-                retryDelay: 3000,
-                autoLoadEntities: true,
-            }),
-            index_1.CommonModule,
-            index_1.UsersModule,
-        ],
+        imports: [typeorm_1.TypeOrmModule.forRoot(mysqlCfg), index_1.CommonModule, index_1.UsersModule],
         controllers: [app_controller_1.AppController],
         providers: [
             app_service_1.AppService,

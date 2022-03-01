@@ -9,7 +9,7 @@ async function bootstrap() {
 
   app.use(logger);
 
-  const port = 6668;
+  const port = 8000;
 
   console.log('==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================');
 

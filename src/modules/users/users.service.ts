@@ -21,15 +21,30 @@ export class UsersService {
     return this.usersRepository.findOne(id);
   }
 
-  findAll(id: string): Promise<User> {
-    return this.usersRepository.findOne(id);
+  findAll(pager: { page: number; size: number }): Promise<{
+    data: User[];
+    code: number;
+    message: string;
+  }> {
+    return this.usersRepository
+      .find({
+        skip: pager.page - 1,
+        take: pager.size,
+      })
+      .then((users) => {
+        return {
+          data: users,
+          code: 200,
+          message: 'success',
+        };
+      });
   }
 
-  async remove(id: string): Promise<void> {
-    await this.usersRepository.delete(id);
+  remove(id: string): Promise<any> {
+    return this.usersRepository.delete(id);
   }
 
   async update(id: number, updateUserDto: UpdateUserDto) {
-    await this.usersRepository.update(id, updateUserDto);
+    return this.usersRepository.update(id, updateUserDto);
   }
 }

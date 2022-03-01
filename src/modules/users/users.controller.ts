@@ -6,6 +6,7 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -23,8 +24,8 @@ export class UsersController {
 
   // 分页
   @Get()
-  findAll() {
-    return this.usersService.findAll('1');
+  findAll(@Query() pager: { page: number; size: number }) {
+    return this.usersService.findAll(pager);
   }
 
   // 查询
@@ -35,6 +36,12 @@ export class UsersController {
 
   // 更新
   @Patch(':id')
+  patchUpdate(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
+    return this.usersService.update(+id, updateUserDto);
+  }
+
+  // 更新
+  @Post(':id')
   update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
     return this.usersService.update(+id, updateUserDto);
   }

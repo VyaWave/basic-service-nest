@@ -4,4 +4,7 @@ export declare class User {
     lastName: string;
     age: number;
     isActive: boolean;
+    createdDate: string;
+    updateDate: string;
+    version: string;
 }

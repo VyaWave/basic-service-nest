@@ -27,14 +27,25 @@ let UsersService = class UsersService {
     findOne(id) {
         return this.usersRepository.findOne(id);
     }
-    findAll(id) {
-        return this.usersRepository.findOne(id);
+    findAll(pager) {
+        return this.usersRepository
+            .find({
+            skip: pager.page - 1,
+            take: pager.size,
+        })
+            .then((users) => {
+            return {
+                data: users,
+                code: 200,
+                message: 'success',
+            };
+        });
     }
-    async remove(id) {
-        await this.usersRepository.delete(id);
+    remove(id) {
+        return this.usersRepository.delete(id);
     }
     async update(id, updateUserDto) {
-        await this.usersRepository.update(id, updateUserDto);
+        return this.usersRepository.update(id, updateUserDto);
     }
 };
 UsersService = __decorate([

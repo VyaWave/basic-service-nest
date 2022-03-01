@@ -7,7 +7,14 @@ export declare class UsersService {
     constructor(usersRepository: Repository<User>);
     create(createUserDto: CreateUserDto): Promise<CreateUserDto & User>;
     findOne(id: string): Promise<User>;
-    findAll(id: string): Promise<User>;
-    remove(id: string): Promise<void>;
-    update(id: number, updateUserDto: UpdateUserDto): Promise<void>;
+    findAll(pager: {
+        page: number;
+        size: number;
+    }): Promise<{
+        data: User[];
+        code: number;
+        message: string;
+    }>;
+    remove(id: string): Promise<any>;
+    update(id: number, updateUserDto: UpdateUserDto): Promise<import("typeorm").UpdateResult>;
 }

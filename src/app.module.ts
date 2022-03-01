@@ -8,17 +8,11 @@ import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { UsersModule, CommonModule } from './modules/index';
 import { AllExceptionsFilter } from './filters/any-exception/any-exception.filter';
+import config from './config/index';
 
+const mysqlCfg = config.mysql;
 @Module({
-  imports: [
-    TypeOrmModule.forRoot({
-      retryAttempts: 10,
-      retryDelay: 3000,
-      autoLoadEntities: true,
-    }),
-    CommonModule,
-    UsersModule,
-  ],
+  imports: [TypeOrmModule.forRoot(mysqlCfg), CommonModule, UsersModule],
   controllers: [AppController],
   providers: [
     AppService,

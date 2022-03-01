@@ -34,6 +34,18 @@ __decorate([
     (0, typeorm_1.Column)({ default: true }),
     __metadata("design:type", Boolean)
 ], User.prototype, "isActive", void 0);
+__decorate([
+    (0, typeorm_1.CreateDateColumn)(),
+    __metadata("design:type", String)
+], User.prototype, "createdDate", void 0);
+__decorate([
+    (0, typeorm_1.UpdateDateColumn)(),
+    __metadata("design:type", String)
+], User.prototype, "updateDate", void 0);
+__decorate([
+    (0, typeorm_1.VersionColumn)(),
+    __metadata("design:type", String)
+], User.prototype, "version", void 0);
 User = __decorate([
     (0, typeorm_1.Entity)()
 ], User);
