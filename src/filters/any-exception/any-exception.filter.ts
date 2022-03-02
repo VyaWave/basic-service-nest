@@ -24,6 +24,7 @@ export class AllExceptionsFilter implements ExceptionFilter {
     nodeLogColor.error(
       `======== [Error Catch] URL: ${request.url} Method: ${request.method}  ========`,
     );
+
     response.status(status).json({
       statusCode: status,
       timestamp: new Date().toISOString(),

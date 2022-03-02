@@ -1,3 +1,5 @@
+// DOCS: NESTJS
+// https://docs.nestjs.com/fundamentals/execution-context
 import {
   CallHandler,
   ExecutionContext,
@@ -7,10 +9,14 @@ import {
 } from '@nestjs/common';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
+import { OopMethodKeyMap } from './oopWrapper';
 
 @Injectable()
 export class WrapperResponseInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+    const methodNameKey: string = context.getHandler().name; // Function Name: "create"
+    const controllerClassName: string = context.getClass().name; // Controller Name: "CatsController"
+
     return next
       .handle()
       .pipe(
@@ -23,11 +29,15 @@ export class WrapperResponseInterceptor implements NestInterceptor {
       )
       .pipe(
         map((data) => {
-          return {
-            data: data,
-            msg: 'success',
-            code: 200,
-          };
+          if (OopMethodKeyMap[methodNameKey]) {
+            return data;
+          } else {
+            return {
+              data: data,
+              msg: 'success',
+              code: 200,
+            };
+          }
         }),
       )
       .pipe(

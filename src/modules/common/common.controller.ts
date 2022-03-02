@@ -44,6 +44,8 @@ export class CommonController {
   }
 
   @Get('calendar')
+  @Header('Cache-Control', 'none')
+  @Header('Content-Type', 'text/plain')
   getCalendar() {
     const day = new Date().getDate();
     const month = new Date().getMonth();
