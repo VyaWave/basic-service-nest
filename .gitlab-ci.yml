@@ -17,7 +17,7 @@ before_script:
 
 job 1:
   stage: deploy
-  script: start:prod
+  script: npm run start:prod
   only:
     - master
 
