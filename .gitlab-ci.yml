@@ -15,9 +15,21 @@ before_script:
   - npm --version
   - npm install
 
-job 1:
+deploy:
   stage: deploy
+  tags:
+    - nvm use default
+    - node -v
+    - npm --version
+    - npm install
+    - NEST_AUTO_OPS
   script: npm run start:prod
   only:
     - master
+
+# job 1:
+#   stage: deploy
+#   script: npm run start:prod
+#   only:
+#     - master
 
