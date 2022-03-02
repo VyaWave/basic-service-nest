@@ -1,0 +1,23 @@
+
+
+cache:
+  paths:
+  - node_modules/
+
+services:
+  - mysql:5.7
+
+stages:
+  - deploy
+
+before_script:
+  - node -v
+  - npm --version
+  - npm install
+
+job 1:
+  stage: deploy
+  script: start:prod
+  only:
+    - master
+
