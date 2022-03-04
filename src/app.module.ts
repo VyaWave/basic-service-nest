@@ -10,12 +10,18 @@ import { UsersModule, CommonModule } from './modules/index';
 import { AllExceptionsFilter } from './filters/any-exception/any-exception.filter';
 import { ValidatePipe } from './pipe/index';
 import { WrapperResponseInterceptor } from './interceptor/index';
+import { AccountModule } from './modules/account/account.module';
 
 import config from './config/index';
 
 const mysqlCfg = config.mysql;
 @Module({
-  imports: [TypeOrmModule.forRoot(mysqlCfg), CommonModule, UsersModule],
+  imports: [
+    TypeOrmModule.forRoot(mysqlCfg),
+    CommonModule,
+    UsersModule,
+    AccountModule,
+  ],
   controllers: [AppController],
   providers: [
     AppService,

@@ -3,13 +3,13 @@ import { CommonInterface } from './common.interface';
 
 @Injectable()
 export class CommonService {
-  private readonly commons: CommonInterface[] = [];
+  private readonly common: CommonInterface[] = [];
 
   create(cat: CommonInterface) {
-    this.commons.push(cat);
+    this.common.push(cat);
   }
 
   findAll(): CommonInterface[] {
-    return this.commons;
+    return this.common;
   }
 }

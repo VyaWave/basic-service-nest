@@ -20,7 +20,7 @@ RUN npm run build
 
 # 配置环境变量
 ENV HOST 0.0.0.0
-ENV PORT 3000
+ENV PORT 8001
 
 # 容器对外暴露的端口号(笔者的nestjs运行的端口号是3000)
 EXPOSE 8001
