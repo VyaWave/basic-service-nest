@@ -44,6 +44,16 @@ export class AccountService {
     });
   }
 
+  findByEmail(email: string) {
+    return this.accountRepository
+      .find({
+        email: email,
+      })
+      .then((res) => {
+        return res;
+      });
+  }
+
   async update(id: number, updateAccountDto: UpdateAccountDto) {
     return this.accountRepository.update(id, updateAccountDto).then((res) => {
       if (res) {

@@ -40,5 +40,5 @@ const mysqlCfg = config.mysql;
   ],
 })
 export class AppModule {
-  constructor(private readonly connection: Connection) {}
+  constructor(private readonly connection: Connection) { }
 }

@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-
+import * as cookieParser from 'cookie-parser';
 import { AppModule } from './app.module';
 import { logger } from './middleware/logger/logger.middleware';
 
@@ -10,6 +10,8 @@ async function bootstrap() {
 
   // 全局中间件
   app.use(logger);
+
+  app.use(cookieParser());
 
   // 全局通道
   // app.useGlobalPipes(new ValidatePipe());
