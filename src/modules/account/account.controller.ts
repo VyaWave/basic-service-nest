@@ -5,6 +5,7 @@ import {
   Body,
   Patch,
   Param,
+  Query,
   Delete,
 } from '@nestjs/common';
 import { AccountService } from './account.service';
@@ -20,9 +21,22 @@ export class AccountController {
     return this.accountService.create(createAccountDto);
   }
 
-  @Get()
-  findAll() {
-    return this.accountService.findAll();
+  @Delete(':id')
+  remove(@Param('id') id: string) {
+    return this.accountService.remove(+id);
+  }
+
+  @Post(':id')
+  update(@Param('id') id: string, @Body() updateAccountDto: UpdateAccountDto) {
+    return this.accountService.update(+id, updateAccountDto);
+  }
+
+  @Patch(':id')
+  patchUpdate(
+    @Param('id') id: string,
+    @Body() updateAccountDto: UpdateAccountDto,
+  ) {
+    return this.accountService.update(+id, updateAccountDto);
   }
 
   @Get(':id')
@@ -30,13 +44,9 @@ export class AccountController {
     return this.accountService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateAccountDto: UpdateAccountDto) {
-    return this.accountService.update(+id, updateAccountDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.accountService.remove(+id);
+  @Get()
+  findAll(@Query() pager: { page: number; size: number }) {
+    console.info('pager', pager);
+    return this.accountService.findAll(pager);
   }
 }

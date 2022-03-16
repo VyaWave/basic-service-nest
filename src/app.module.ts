@@ -4,13 +4,13 @@ import { APP_PIPE, APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
 
-import { AppService } from './app.service';
+import { UsersModule, CommonModule, AccountModule } from './modules/index';
 import { AppController } from './app.controller';
-import { UsersModule, CommonModule } from './modules/index';
+import { AppService } from './app.service';
+
 import { AllExceptionsFilter } from './filters/any-exception/any-exception.filter';
 import { ValidatePipe } from './pipe/index';
 import { WrapperResponseInterceptor } from './interceptor/index';
-import { AccountModule } from './modules/account/account.module';
 
 import config from './config/index';
 
@@ -25,10 +25,10 @@ const mysqlCfg = config.mysql;
   controllers: [AppController],
   providers: [
     AppService,
-    {
-      provide: APP_FILTER,
-      useClass: AllExceptionsFilter,
-    },
+    // {
+    //   provide: APP_FILTER,
+    //   useClass: AllExceptionsFilter,
+    // },
     {
       provide: APP_PIPE,
       useClass: ValidatePipe,
