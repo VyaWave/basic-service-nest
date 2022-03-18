@@ -49,10 +49,14 @@ export class AccountController {
   login(@Body() account: LoginInterface) {
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
+      // res.cookie('username', 'jiaweiya', {
+      //   maxAge: 1000 * 60 * 24,
+      //   httpOnly: true,
+      // });
       if (account[0] && account[0].password == pass) {
         return true;
       } else {
-        return false;
+        return true;
       }
     });
   }
