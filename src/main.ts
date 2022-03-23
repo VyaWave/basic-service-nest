@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
-import cookieParser from 'cookie-parser';
 import { AppModule } from './app.module';
 import { logger } from './middleware/logger/logger.middleware';
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     cors: true,
@@ -9,9 +9,6 @@ async function bootstrap() {
 
   // 全局中间件
   app.use(logger);
-
-  app.use(cookieParser());
-
   // 全局通道
   // app.useGlobalPipes(new ValidatePipe());
 
