@@ -15,5 +15,8 @@
     "skipLibCheck": true,
     "strictNullChecks": false,
     "noFallthroughCasesInSwitch": false
-  }
+  },
+  "exclude": [
+    "client"
+  ]
 }
