@@ -8,8 +8,9 @@ import {
   Query,
   Delete,
   Res,
-  Response,
 } from '@nestjs/common';
+
+import { Response } from 'express';
 
 /* eslint-disable-next-line*/
 const md5 = require('md5');
@@ -46,17 +47,29 @@ export class AccountController {
   }
 
   @Post('login')
-  login(@Body() account: LoginInterface) {
+  login(@Body() account: LoginInterface, @Res() res: Response) {
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
-      // res.cookie('username', 'jiaweiya', {
-      //   maxAge: 1000 * 60 * 24,
-      //   httpOnly: true,
-      // });
+      res.cookie('username', 'jiaweiya', {
+        maxAge: 1000 * 60 * 24,
+        httpOnly: true,
+      });
+
+      res.cookie('name', 'jiaweiya', {
+        maxAge: 1000 * 60 * 24,
+        httpOnly: true,
+      });
+
       if (account[0] && account[0].password == pass) {
-        return true;
+        return res.status(200).send({
+          code: 200,
+          msg: 'success',
+        });
       } else {
-        return true;
+        return res.status(200).send({
+          code: -1,
+          msg: 'no valid account!',
+        });
       }
     });
   }
