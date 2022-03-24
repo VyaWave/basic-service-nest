@@ -13,6 +13,9 @@ async function bootstrap() {
   // 全局中间件
   app.use(logger);
   app.use(cookieParser());
+  app.enableCors();
+  app.setGlobalPrefix('api');
+
   // 全局通道
   // app.useGlobalPipes(new ValidatePipe());
 
