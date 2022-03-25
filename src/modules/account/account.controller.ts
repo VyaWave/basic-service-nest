@@ -55,16 +55,13 @@ export class AccountController {
         httpOnly: true,
       });
 
-      res.cookie('name', 'jiaweiya', {
+      res.cookie('ticket', pass, {
         maxAge: 1000 * 60 * 24,
         httpOnly: true,
       });
 
       if (account[0] && account[0].password == pass) {
-        return res.status(200).send({
-          code: 200,
-          msg: 'success',
-        });
+        res.redirect('/index');
       } else {
         return res.status(200).send({
           code: -1,
