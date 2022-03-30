@@ -1,4 +1,4 @@
-import { Get, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { CreateAccountDto } from './dto/create-account.dto';
 import { UpdateAccountDto } from './dto/update-account.dto';
 import { Account } from './entities/account.entity';
@@ -33,7 +33,7 @@ export class AccountService {
       .then(([list, count]) => {
         return {
           list,
-          count,
+          count: 1,
         };
       });
   }

@@ -11,6 +11,7 @@ import {
 } from '@nestjs/common';
 
 import { Response } from 'express';
+import { setCookies } from '../../utils/index';
 
 /* eslint-disable-next-line*/
 const md5 = require('md5');
@@ -36,34 +37,21 @@ export class AccountController {
     return this.accountService.findAll(pager);
   }
 
-  @Post()
-  create(@Body() createAccountDto: CreateAccountDto) {
-    const password = md5(createAccountDto.password);
-
-    return this.accountService.create({
-      ...createAccountDto,
-      password: password,
-    });
-  }
-
   @Post('login')
-  login(@Body() account: LoginInterface, @Res() res: Response) {
+  login(@Body() account: LoginInterface, @Res() response: Response) {
+    console.info('=========    account[0] =========', 1);
+
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
-      res.cookie('username', 'jiaweiya', {
-        maxAge: 1000 * 60 * 24,
-        httpOnly: true,
-      });
-
-      res.cookie('ticket', pass, {
-        maxAge: 1000 * 60 * 24,
-        httpOnly: true,
-      });
-
       if (account[0] && account[0].password == pass) {
-        res.redirect('/index');
+        console.info('=========    account[0] =========', account[0]);
+        setCookies(response, {
+          name: 'jiaweiya',
+          userInfo: encodeURIComponent(JSON.stringify(account)),
+        });
+        response.redirect(301, '//baidu.com');
       } else {
-        return res.status(200).send({
+        return response.status(200).send({
           code: -1,
           msg: 'no valid account!',
         });
@@ -73,12 +61,28 @@ export class AccountController {
 
   @Post('register')
   register(@Body() account: LoginInterface) {
-    return this.create(account);
+    console.info('=========    account[0] =========', 1);
+
+    return this.accountService.create(account);
   }
 
   @Post(':id')
   update(@Param('id') id: string, @Body() updateAccountDto: UpdateAccountDto) {
+    console.info('=========    account[0] =========', 1);
+
     return this.accountService.update(+id, updateAccountDto);
+  }
+
+  @Post()
+  create(@Body() createAccountDto: CreateAccountDto) {
+    console.info('=========    account[0] =========', 1);
+
+    const password = md5(createAccountDto.password);
+
+    return this.accountService.create({
+      ...createAccountDto,
+      password: password,
+    });
   }
 
   @Patch(':id')
