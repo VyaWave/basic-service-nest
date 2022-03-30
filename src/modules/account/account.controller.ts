@@ -49,7 +49,7 @@ export class AccountController {
           name: 'jiaweiya',
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
-        response.redirect(301, '//baidu.com');
+        response.redirect(301, '//essay.weiya.design');
       } else {
         return response.status(200).send({
           code: -1,
