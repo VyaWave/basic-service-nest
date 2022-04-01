@@ -81,8 +81,9 @@ export class AccountController {
           name: 'jiaweiya',
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
+
         response.setHeader('Location', '//essay.weiya.design');
-        response.status(302);
+        response.status(303);
         response.end();
       } else {
         return response.status(200).send({
