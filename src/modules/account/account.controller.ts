@@ -9,6 +9,7 @@ import {
   Delete,
   Res,
   Redirect,
+  UseInterceptors,
 } from '@nestjs/common';
 
 import { Response } from 'express';
@@ -23,21 +24,29 @@ import { UpdateAccountDto } from './dto/update-account.dto';
 
 import { LoginInterface } from '../interface/index';
 
+import { RedirectGetInterceptor } from '../../interceptor/index';
+
 @Controller('account')
 export class AccountController {
   constructor(private readonly accountService: AccountService) {}
 
-  @Get('redirect')
+  @Get('dec-redirect')
   @Redirect('//essay.weiya.design', 302)
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   redirectUrl(): void {}
 
-  @Get('redirect-test')
+  @Get('inter-redirect')
+  @UseInterceptors(new RedirectGetInterceptor('//lofter.com'))
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  redirectInter(@Res() res): void {}
+
+  @Get('manu-redirect')
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   testRedirect(
     @Res()
     response: Response,
   ) {
+    console.info('manu-redirect');
     setHeaders(response, {
       token: 'token',
     });

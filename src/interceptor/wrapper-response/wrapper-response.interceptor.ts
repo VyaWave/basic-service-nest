@@ -15,7 +15,7 @@ import { OopMethodKeyMap } from './oopWrapper';
 export class WrapperResponseInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     const methodNameKey: string = context.getHandler().name; // Function Name: "create"
-    const controllerClassName: string = context.getClass().name; // Controller Name: "CatsController"
+    // const controllerClassName: string = context.getClass().name; // Controller Name: "CatsController"
 
     return next
       .handle()
