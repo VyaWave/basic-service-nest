@@ -8,6 +8,7 @@ import {
   Query,
   Delete,
   Res,
+  Redirect,
 } from '@nestjs/common';
 
 import { Response } from 'express';
@@ -37,9 +38,24 @@ export class AccountController {
     return this.accountService.findAll(pager);
   }
 
+  @Redirect()
+  redirectUrl(url: string) {
+    console.info('222', url);
+    return {
+      url,
+      statusCode: 302,
+    };
+  }
+
   @Post('login')
-  login(@Body() account: LoginInterface, @Res() response: Response) {
-    console.info('=========    account[0] =========', 1);
+  login(
+    @Body() account: LoginInterface,
+    @Res({
+      passthrough: true,
+    })
+    response: Response,
+  ) {
+    console.info('=========  account[0] =========', 1);
 
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
@@ -54,8 +70,9 @@ export class AccountController {
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
 
-        response.location('https://essay.weiya.design/');
-        response.redirect(302, 'https://essay.weiya.design/');
+        this.redirectUrl('https://essay.weiya.design/');
+        // response.location('https://essay.weiya.design/');
+        // response.redirect(302, 'https://essay.weiya.design/');
 
         //   code: 200,
         //   msg: 'Login Success!',
