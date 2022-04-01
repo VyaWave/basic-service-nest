@@ -50,9 +50,7 @@ export class AccountController {
   @Post('login')
   login(
     @Body() account: LoginInterface,
-    @Res({
-      passthrough: true,
-    })
+    @Res()
     response: Response,
   ) {
     console.info('=========  account[0] =========', 1);
@@ -70,9 +68,9 @@ export class AccountController {
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
 
-        this.redirectUrl('https://essay.weiya.design/');
-        // response.location('https://essay.weiya.design/');
-        // response.redirect(302, 'https://essay.weiya.design/');
+        // this.redirectUrl('https://essay.weiya.design/');
+        response.location('https://essay.weiya.design/');
+        response.redirect(302, 'https://essay.weiya.design/');
 
         //   code: 200,
         //   msg: 'Login Success!',
