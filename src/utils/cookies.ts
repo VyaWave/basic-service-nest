@@ -8,6 +8,7 @@ export const setCookies = (
     res.cookie(key, cookies[key], {
       maxAge: 48 * 3600 * 1000,
       httpOnly: false,
+      domain: '.weiya.design',
     });
   });
 };

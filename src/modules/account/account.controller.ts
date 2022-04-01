@@ -27,6 +27,29 @@ import { LoginInterface } from '../interface/index';
 export class AccountController {
   constructor(private readonly accountService: AccountService) {}
 
+  @Get('redirect')
+  @Redirect('//essay.weiya.design', 302)
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  redirectUrl(): void {}
+
+  @Get('redirect-test')
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  testRedirect(
+    @Res()
+    response: Response,
+  ) {
+    setHeaders(response, {
+      token: 'token',
+    });
+    setCookies(response, {
+      name: 'jiaweiya',
+      userInfo: encodeURIComponent(JSON.stringify({})),
+    });
+    response.setHeader('Location', '//essay.weiya.design');
+    response.status(302);
+    response.end();
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.accountService.findOne(+id);
@@ -36,15 +59,6 @@ export class AccountController {
   findAll(@Query() pager: { page: number; size: number }) {
     console.info('pager', pager);
     return this.accountService.findAll(pager);
-  }
-
-  @Redirect()
-  redirectUrl(url: string) {
-    console.info('222', url);
-    return {
-      url,
-      statusCode: 302,
-    };
   }
 
   @Post('login')
@@ -67,18 +81,9 @@ export class AccountController {
           name: 'jiaweiya',
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
-
-        // this.redirectUrl('https://essay.weiya.design/');
-
-        // response.location('https://essay.weiya.design/');
-        // response.status(302);
-
-        response.redirect(302, 'https://essay.weiya.design/');
-        //   code: 200,
-        //   msg: 'Login Success!',
-        // });
-
-        // response.status(200).send({});
+        response.setHeader('Location', '//essay.weiya.design');
+        response.status(302);
+        response.end();
       } else {
         return response.status(200).send({
           code: -1,
