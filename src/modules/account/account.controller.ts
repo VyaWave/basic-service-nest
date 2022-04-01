@@ -83,7 +83,7 @@ export class AccountController {
         });
 
         // response.setHeader('Location', '//essay.weiya.design');
-        response.redirect('/redirect');
+        response.redirect('/api/account/redirect');
         response.status(303);
         response.end();
       } else {
