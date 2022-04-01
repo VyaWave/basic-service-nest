@@ -84,7 +84,7 @@ export class AccountController {
 
         // response.setHeader('Location', '//essay.weiya.design');
         response.redirect('/api/account/redirect');
-        response.status(303);
+        response.status(302);
         response.end();
       } else {
         return response.status(200).send({
