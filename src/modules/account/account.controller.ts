@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common';
 
 import { Response } from 'express';
-import { setCookies } from '../../utils/index';
+import { setCookies, setHeaders } from '../../utils/index';
 
 /* eslint-disable-next-line*/
 const md5 = require('md5');
@@ -44,12 +44,24 @@ export class AccountController {
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
       if (account[0] && account[0].password == pass) {
-        console.info('=========    account[0] =========', account[0]);
+        console.info('=========   account[0] =========', account[0]);
+
+        setHeaders(response, {
+          token: pass,
+        });
         setCookies(response, {
           name: 'jiaweiya',
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
+
+        response.location('https://essay.weiya.design/');
         response.redirect(302, 'https://essay.weiya.design/');
+
+        //   code: 200,
+        //   msg: 'Login Success!',
+        // });
+
+        // response.status(200).send({});
       } else {
         return response.status(200).send({
           code: -1,
@@ -75,7 +87,7 @@ export class AccountController {
 
   @Post()
   create(@Body() createAccountDto: CreateAccountDto) {
-    console.info('=========    account[0] =========', 1);
+    console.info('=========   * account[0] =========', 1);
 
     const password = md5(createAccountDto.password);
 
