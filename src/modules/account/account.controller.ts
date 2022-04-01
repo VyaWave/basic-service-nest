@@ -69,9 +69,11 @@ export class AccountController {
         });
 
         // this.redirectUrl('https://essay.weiya.design/');
-        response.location('https://essay.weiya.design/');
-        response.redirect(302, 'https://essay.weiya.design/');
 
+        response.location('https://essay.weiya.design/');
+        response.status(302);
+
+        // response.redirect(302, 'https://essay.weiya.design/');
         //   code: 200,
         //   msg: 'Login Success!',
         // });
