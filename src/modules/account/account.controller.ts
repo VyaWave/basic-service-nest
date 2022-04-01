@@ -82,7 +82,8 @@ export class AccountController {
           userInfo: encodeURIComponent(JSON.stringify(account)),
         });
 
-        response.setHeader('Location', '//essay.weiya.design');
+        // response.setHeader('Location', '//essay.weiya.design');
+        response.redirect('/redirect');
         response.status(303);
         response.end();
       } else {
