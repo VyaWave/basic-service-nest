@@ -6,35 +6,60 @@ import {
   Patch,
   Param,
   Delete,
+  Header,
 } from '@nestjs/common';
 import { ViewsService } from './views.service';
+import { CalendarSvgCode } from './tpls';
 
 @Controller('views')
 export class ViewsController {
   constructor(private readonly viewsService: ViewsService) {}
 
-  @Post()
-  create(@Body() createViewDto: any) {
-    return this.viewsService.create(createViewDto);
+  @Get('form-test')
+  testForm() {
+    return `<form action="/api/account/login" method="post">
+    <input id="email" name='email' placeholder="email"/>
+    <input id="password"  name='password' placeholder="password"/>
+    <button type='submit'>提交</button>
+    </form>`;
   }
 
-  @Get()
-  findAll() {
-    return this.viewsService.findAll();
-  }
+  @Get('calendar')
+  @Header('Cache-Control', 'none')
+  getCalendar() {
+    const day = new Date().getDate();
+    const month = new Date().getMonth();
+    const weekday = new Date().getDay();
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.viewsService.findOne(+id);
-  }
+    const MonthMap = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sept',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateViewDto: any) {
-    return this.viewsService.update(+id, updateViewDto);
-  }
+    const WeekdayMap = [
+      'Monday',
+      'Tuesday',
+      'Monday',
+      'Wednesday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ];
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.viewsService.remove(+id);
+    const TPL = CalendarSvgCode.replace(/\$month/g, MonthMap[month])
+      .replace(/\$day/g, `${day}`)
+      .replace(/\$weekday/g, WeekdayMap[weekday]);
+
+    return TPL;
   }
 }

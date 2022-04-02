@@ -76,24 +76,11 @@ export class AccountController {
     @Res()
     response: Response,
   ) {
-    console.info('=========  account[0] =========', 1);
-
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
       if (account[0] && account[0].password == pass) {
-        console.info('=========   account[0] =========', account[0]);
-
-        setHeaders(response, {
-          token: pass,
-        });
-        setCookies(response, {
-          name: 'jiaweiya',
-          userInfo: encodeURIComponent(JSON.stringify(account)),
-        });
-
-        // response.setHeader('Location', '//essay.weiya.design');
-        response.redirect('/api/account/redirect');
-        // response.status(302);
+        response.setHeader('Location', '//essay.weiya.design');
+        response.status(302);
         response.end();
       } else {
         return response.status(200).send({

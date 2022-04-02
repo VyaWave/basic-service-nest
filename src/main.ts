@@ -23,8 +23,8 @@ async function bootstrap() {
 
   console.log('==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================');
 
-  console.log(`Server is start on: http://127.0.0.1:${port}`);
-  console.log(`Server is start on: http://localhost:${port}`);
+  console.log(`Server is start on: http://127.0.0.1:${port}/api`);
+  console.log(`Server is start on: http://localhost:${port}/api`);
 
   console.log('==================== 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ===================');
 

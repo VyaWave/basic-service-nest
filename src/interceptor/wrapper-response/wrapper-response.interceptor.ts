@@ -9,13 +9,21 @@ import {
 } from '@nestjs/common';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { OopMethodKeyMap } from './oopWrapper';
+import { OopMethodKeyMap, OopControllerMap } from './oopWrapper';
 
+/**
+ * INFO: & WARNING:
+ * Global Response Interceptor
+ * Normal: { msg: string; code: number; data: any  }
+ * @export
+ * @class WrapperResponseInterceptor
+ * @implements {NestInterceptor}
+ */
 @Injectable()
 export class WrapperResponseInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     const methodNameKey: string = context.getHandler().name; // Function Name: "create"
-    // const controllerClassName: string = context.getClass().name; // Controller Name: "CatsController"
+    const controllerClassName: string = context.getClass().name; // Controller Name: "CatsController"
 
     return next
       .handle()
@@ -29,7 +37,10 @@ export class WrapperResponseInterceptor implements NestInterceptor {
       )
       .pipe(
         map((data) => {
-          if (OopMethodKeyMap[methodNameKey]) {
+          if (
+            OopMethodKeyMap.has(methodNameKey) ||
+            OopControllerMap.has(controllerClassName)
+          ) {
             return data;
           } else {
             return {

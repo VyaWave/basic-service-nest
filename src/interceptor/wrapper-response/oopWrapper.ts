@@ -1,7 +1,8 @@
-export const OopMethodKeyMap: { [key: string]: string } = {
-  getCalendar: 'getCalendar',
-};
+export const OopMethodKeyMap: Map<string, boolean> = new Map([
+  ['getCalendar', true],
+]);
 
-export const OopControllerMap: { [key: string]: string } = {
-  CommonController: 'CommonController',
-};
+export const OopControllerMap: Map<string, boolean> = new Map([
+  ['CommonController', true],
+  ['ViewsController', true],
+]);
