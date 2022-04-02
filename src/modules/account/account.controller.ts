@@ -79,7 +79,7 @@ export class AccountController {
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
       if (account[0] && account[0].password == pass) {
-        response.setHeader('Location', '//essay.weiya.design');
+        response.setHeader('Location', '//baidu.com');
         response.status(302);
         response.end();
       } else {
