@@ -97,6 +97,8 @@ const Login = () => {
               placement: 'topEnd',
             },
           );
+
+          window.location.href = res.data.nextUrl;
         }
       });
   };

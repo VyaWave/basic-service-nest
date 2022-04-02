@@ -71,22 +71,22 @@ export class AccountController {
   }
 
   @Post('login')
-  login(
-    @Body() account: LoginInterface,
-    @Res()
-    response: Response,
-  ) {
+  login(@Body() account: LoginInterface) {
     const pass = md5(account.password);
     return this.accountService.findByEmail(account.email).then((account) => {
       if (account[0] && account[0].password == pass) {
-        response.setHeader('Location', '//essay.weiya.design');
-        response.status(302);
-        response.end();
+        return {
+          code: 200,
+          msg: 'login success!',
+          account: account,
+          nextUrl: 'https://essay.weiya.design',
+        };
       } else {
-        return response.status(200).send({
+        return {
           code: -1,
           msg: 'no valid account!',
-        });
+          account: account,
+        };
       }
     });
   }
