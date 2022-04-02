@@ -93,7 +93,7 @@ export class AccountController {
 
   @Post('register')
   register(@Body() account: LoginInterface) {
-    console.info('=========    account[0] =========', 1);
+    account.password = md5(account.password);
 
     return this.accountService.create(account);
   }

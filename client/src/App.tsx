@@ -98,7 +98,7 @@ const Login = () => {
             },
           );
 
-          window.location.href = res.data.nextUrl;
+          window.location.href = res.data.data.nextUrl;
         }
       });
   };
