@@ -18,6 +18,7 @@
   },
   "exclude": [
     "client",
-    "dist"
+    "dist",
+    "packages/**/*"
   ]
 }
