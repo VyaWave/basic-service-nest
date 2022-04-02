@@ -10,8 +10,8 @@ import CharacterLockIcon from '@rsuite/icons/CharacterLock';
 
 import styles from './styles/Login.module.css';
 
-import 'rsuite/dist/rsuite.min.css'
-import './styles/globals.css'
+import 'rsuite/dist/rsuite.min.css';
+import './styles/globals.css';
 
 import icon from './assets/icon.svg';
 
@@ -67,7 +67,7 @@ const Login = () => {
       })
       .then((res: any) => {
         if (res.data.code == 200) {
-          setLoginSystem(true)
+          setLoginSystem(true);
 
           toaster.push(
             message({ type: 'success', title: '提示', content: '注册成功' }),
@@ -90,7 +90,7 @@ const Login = () => {
       .then((res: any) => {
         console.info(res);
         if (res.data.code == 200) {
-          setLoginSystem(true)
+          setLoginSystem(true);
           toaster.push(
             message({ type: 'success', title: '提示', content: '登录成功' }),
             {
@@ -102,8 +102,6 @@ const Login = () => {
         }
       });
   };
-
-
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -115,58 +113,61 @@ const Login = () => {
           height="60"
           style={{
             zIndex: 100,
-            position: 'relative'
+            position: 'relative',
           }}
         ></img>
-        { !loginSystem ? <div className={styles.ctxWrapper}>
-          <InputGroup inside style={layout} className={styles.input}>
-            <InputGroup.Addon>
-              <EmailIcon />
-            </InputGroup.Addon>
-            <Input
-              placeholder="Your Account"
-              value={mail}
-              onChange={handleMailChange}
-            />
-          </InputGroup>
+        {!loginSystem ? (
+          <div className={styles.ctxWrapper}>
+            <InputGroup inside style={layout} className={styles.input}>
+              <InputGroup.Addon>
+                <EmailIcon />
+              </InputGroup.Addon>
+              <Input
+                placeholder="Your Account"
+                value={mail}
+                onChange={handleMailChange}
+              />
+            </InputGroup>
 
-          <InputGroup inside style={layout} className={styles.input}>
-            <InputGroup.Addon>
-              <CharacterLockIcon />
-            </InputGroup.Addon>
-            <Input
-              placeholder="Your Password"
-              type={visible ? 'text' : 'password'}
-              value={pass}
-              onChange={handlePassChange}
-            />
-            <InputGroup.Button onClick={handleInputChange}>
-              {visible ? <EyeCloseIcon /> : <VisibleIcon />}
-            </InputGroup.Button>
-          </InputGroup>
+            <InputGroup inside style={layout} className={styles.input}>
+              <InputGroup.Addon>
+                <CharacterLockIcon />
+              </InputGroup.Addon>
+              <Input
+                placeholder="Your Password"
+                type={visible ? 'text' : 'password'}
+                value={pass}
+                onChange={handlePassChange}
+              />
+              <InputGroup.Button onClick={handleInputChange}>
+                {visible ? <EyeCloseIcon /> : <VisibleIcon />}
+              </InputGroup.Button>
+            </InputGroup>
 
-          <Button
-            type="submit"
-            className={styles.button}
-            appearance="primary"
-            style={{ width: 300 }}
-            color="blue"
-            onClick={isLogin ? handleLogin : handleSignUp}
-          >
-            {isLogin ? '登录系统' : '注册账号'}
-            <SortUpIcon
-              style={{
-                transform: 'rotate(90deg)',
-                fontSize: '20px',
-              }}
-            />
-          </Button>
+            <Button
+              type="submit"
+              className={styles.button}
+              appearance="primary"
+              style={{ width: 300 }}
+              color="blue"
+              onClick={isLogin ? handleLogin : handleSignUp}
+            >
+              {isLogin ? '登录系统' : '注册账号'}
+              <SortUpIcon
+                style={{
+                  transform: 'rotate(90deg)',
+                  fontSize: '20px',
+                }}
+              />
+            </Button>
 
-          <div className={styles.tips} onClick={handleLoginChange}>
-            {isLogin ? 'Go To SignUp' : 'Go To Login'}{' '}
+            <div className={styles.tips} onClick={handleLoginChange}>
+              {isLogin ? 'Go To SignUp' : 'Go To Login'}
+            </div>
           </div>
-        </div>
-        :  <p className={styles.title}>You Success Login!</p> }
+        ) : (
+          <p className={styles.title}>You Success Login!</p>
+        )}
       </main>
     </div>
   );
