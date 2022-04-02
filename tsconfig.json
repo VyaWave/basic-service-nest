@@ -16,5 +16,5 @@
     "strictNullChecks": false,
     "noFallthroughCasesInSwitch": false
   },
-  "exclude": ["client", "dist", "packages/**/*"]
+  "exclude": ["client/**/*", "dist", "packages/**/*"]
 }
