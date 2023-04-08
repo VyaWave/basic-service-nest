@@ -35,14 +35,14 @@ export class ExperienceOrderController {
     return this.experienceOrderService.findAll(query);
   }
 
-  @Post()
-  create(@Body() createAccountDto: CreateExperienceOrderDto) {
-    return this.experienceOrderService.create(createAccountDto);
-  }
-
   @Post('comments')
   createComments(@Body() createAccountDto: CreateExperienceOrderDto) {
     return this.experienceOrderService.createComments(createAccountDto);
+  }
+
+  @Post()
+  create(@Body() createAccountDto: CreateExperienceOrderDto) {
+    return this.experienceOrderService.create(createAccountDto);
   }
 
   @Patch('updateOne')
