@@ -8,26 +8,31 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class AccountEntity {
+export class ExperienceCommentsEntity {
   @PrimaryColumn()
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  email: string;
+  parent_id: number;
 
-  @Column()
-  password: string;
+  @Column({
+    length: 256,
+    charset: 'utf8',
+  })
+  creator: string;
+  content: string;
+  files: string;
+  extra: string;
 
-  @Column({ default: false })
-  isActive: boolean;
+  @Column({
+    default: 1,
+  })
+  type: number;
 
   @CreateDateColumn()
   createdDate: string;
 
   @UpdateDateColumn()
   updateDate: string;
-
-  // @OneToMany((type) => Photo, (photo) => photo.user)
-  // photos: Photo[];
 }

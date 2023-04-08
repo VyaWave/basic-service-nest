@@ -15,5 +15,6 @@ export default {
     retryAttempts: 10,
     retryDelay: 3000,
     autoLoadEntities: true,
+    charset: 'utf8',
   },
 };

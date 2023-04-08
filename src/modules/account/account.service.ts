@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateAccountDto } from './dto/create-account.dto';
 import { UpdateAccountDto } from './dto/update-account.dto';
-import { Account } from './entities/account.entity';
+import { AccountEntity } from './entities/account.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 
 import { Repository } from 'typeorm';
@@ -9,8 +9,8 @@ import { Repository } from 'typeorm';
 @Injectable()
 export class AccountService {
   constructor(
-    @InjectRepository(Account)
-    private accountRepository: Repository<Account>,
+    @InjectRepository(AccountEntity)
+    private accountRepository: Repository<AccountEntity>,
   ) {}
 
   create(createAccountDto: CreateAccountDto) {
@@ -24,7 +24,7 @@ export class AccountService {
   findAll(pager: {
     page: number;
     size: number;
-  }): Promise<{ list: Account[]; count: number }> {
+  }): Promise<{ list: AccountEntity[]; count: number }> {
     return this.accountRepository
       .findAndCount({
         skip: pager.page - 1,

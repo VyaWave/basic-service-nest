@@ -13,6 +13,15 @@ import { ValidatePipe } from './pipe/index';
 import { WrapperResponseInterceptor } from './interceptor/index';
 import { ViewsModule } from './modules/views/views.module';
 
+import { ExperienceOrderController } from './modules/experience-order/experience-order.controller';
+import { ExperienceOrderModule } from './modules/experience-order/experience-order.module';
+
+import { ExperienceCommentsController } from './modules/experience-comments/experience-comments.controller';
+import { ExperienceCommentsModule } from './modules/experience-comments/experience-comments.module';
+
+import { ExperienceSystemsController } from './modules/experience-systems/experience-systems.controller';
+import { ExperienceSystemsModule } from './modules/experience-systems/experience-systems.module';
+
 import config from './config/index';
 
 const mysqlCfg = config.mysql;
@@ -23,8 +32,16 @@ const mysqlCfg = config.mysql;
     UsersModule,
     AccountModule,
     ViewsModule,
+    ExperienceOrderModule,
+    ExperienceCommentsModule,
+    ExperienceSystemsModule,
   ],
-  controllers: [AppController],
+  controllers: [
+    AppController,
+    ExperienceOrderController,
+    ExperienceSystemsController,
+    ExperienceCommentsController,
+  ],
   providers: [
     AppService,
     // {
@@ -43,12 +60,4 @@ const mysqlCfg = config.mysql;
 })
 export class AppModule {
   constructor(private readonly connection: Connection) {}
-
-  // 注意：这里很重要，_next*是nextjs静态资源请求的前缀，这里这么处理是将静态资源相关的请求由Nest转交个Next处理
-  // private static handleAssets(consumer: MiddlewareConsumer): void {
-  //   consumer.apply(NextMiddleware).forRoutes({
-  //     path: '_next*',
-  //     method: RequestMethod.GET,
-  //   });
-  // }
 }

@@ -1,5 +1,5 @@
-import { User } from './user.entity';
+import { UserEntity } from './user.entity';
 import { EntityRepository } from 'typeorm';
 
-@EntityRepository(User)
+@EntityRepository(UserEntity)
 export class UserRepository {}
