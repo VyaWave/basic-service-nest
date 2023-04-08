@@ -48,10 +48,10 @@ const mysqlCfg = config.mysql;
     //   provide: APP_FILTER,
     //   useClass: AllExceptionsFilter,
     // },
-    {
-      provide: APP_PIPE,
-      useClass: ValidatePipe,
-    },
+    // {
+    //   provide: APP_PIPE,
+    //   useClass: ValidatePipe,
+    // },
     {
       provide: APP_INTERCEPTOR,
       useClass: WrapperResponseInterceptor,
