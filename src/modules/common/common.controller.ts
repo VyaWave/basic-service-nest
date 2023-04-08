@@ -23,6 +23,12 @@ export class CommonController {
     return 'This action returns all cats';
   }
 
+  @Get('calendar')
+  @HttpCode(200)
+  findCalendar(@Req() request: Request): string {
+    return 'This action returns all cats';
+  }
+
   @Get('/index')
   @HttpCode(200)
   index(@Req() request: Request): string {
