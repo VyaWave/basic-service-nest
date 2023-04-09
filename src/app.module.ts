@@ -52,10 +52,10 @@ const mysqlCfg = config.mysql;
     //   provide: APP_PIPE,
     //   useClass: ValidatePipe,
     // },
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: WrapperResponseInterceptor,
-    },
+    // {
+    //   provide: APP_INTERCEPTOR,
+    //   useClass: WrapperResponseInterceptor,
+    // },
   ],
 })
 export class AppModule {

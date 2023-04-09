@@ -19,10 +19,29 @@ export class ExperienceCommentsEntity {
   @Column({
     length: 256,
     charset: 'utf8',
+    default: null,
   })
   creator: string;
+
+  @Column({
+    length: 256,
+    charset: 'utf8',
+    default: null,
+  })
   content: string;
+
+  @Column({
+    length: 256,
+    charset: 'utf8',
+    default: null,
+  })
   files: string;
+
+  @Column({
+    length: 256,
+    charset: 'utf8',
+    default: null,
+  })
   extra: string;
 
   @Column({

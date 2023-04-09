@@ -8,6 +8,7 @@ import {
   Query,
   Delete,
   Res,
+  Put,
 } from '@nestjs/common';
 
 import { ExperienceOrderService } from './experience-order.service';
@@ -45,7 +46,7 @@ export class ExperienceOrderController {
     return this.experienceOrderService.create(createAccountDto);
   }
 
-  @Patch('updateOne')
+  @Put('update')
   update(@Body() createAccountDto: CreateExperienceOrderDto) {
     const { id, ...args } = createAccountDto;
 

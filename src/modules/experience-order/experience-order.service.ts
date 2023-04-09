@@ -66,7 +66,11 @@ export class ExperienceOrderService {
         return this.experienceOrderRepository
           .update(createExperienceOrderDto.parent_id, { status: 3 })
           .then(({ affected }) => {
-            return affected ? 'success' : 'failed';
+            return {
+              code: 0,
+              msg: affected ? 'success' : 'failed',
+              data: null,
+            };
           });
       });
   }
@@ -75,7 +79,7 @@ export class ExperienceOrderService {
     page: number;
     size: number;
     status: number;
-  }): Promise<{ list: ExperienceOrderEntity[]; count: number }> {
+  }): Promise<{ data: ExperienceOrderEntity[]; total: number }> {
     return this.experienceOrderRepository
       .findAndCount({
         skip: pager.page - 1,
@@ -86,51 +90,57 @@ export class ExperienceOrderService {
       })
       .then(([list, count]) => {
         return {
-          list: list,
-          count: count,
+          data: list,
+          code: 0,
+          msg: 'success',
+          total: count,
         };
       });
   }
-  findAllPeople(): Promise<{ list: any[]; count: number }> {
+  findAllPeople(): Promise<{ data: any }> {
     return Promise.resolve({
-      list: [
-        {
-          ldap: 'renxiaojuan1',
-          name: 'renxiaojuan1',
-          deptName: 'xxx',
-        },
-        {
-          ldap: 'renxiaojuan2',
-          name: 'renxiaojuan2',
-          deptName: 'xxx',
-        },
-        {
-          ldap: 'renxiaojuan3',
-          name: 'renxiaojuan3',
-          deptName: 'xxx',
-        },
-        {
-          ldap: 'renxiaojuan4',
-          name: 'renxiaojuan4',
-          deptName: 'xxx',
-        },
-        {
-          ldap: 'renxiaojuan5',
-          name: 'renxiaojuan5',
-          deptName: 'xxx',
-        },
-        {
-          ldap: 'renxiaojuan6',
-          name: 'renxiaojuan6',
-          deptName: 'xxx',
-        },
-        {
-          ldap: 'renxiaojuan7',
-          name: 'renxiaojuan7',
-          deptName: 'xxx',
-        },
-      ],
-      count: 100,
+      data: {
+        accounts: [
+          {
+            ldap: 'renxiaojuan',
+            name: 'renxiaojuan',
+            deptName: 'xxx',
+          },
+          {
+            ldap: 'renxiaojuan2',
+            name: 'renxiaojuan2',
+            deptName: 'xxx',
+          },
+          {
+            ldap: 'renxiaojuan3',
+            name: 'renxiaojuan3',
+            deptName: 'xxx',
+          },
+          {
+            ldap: 'renxiaojuan4',
+            name: 'renxiaojuan4',
+            deptName: 'xxx',
+          },
+          {
+            ldap: 'renxiaojuan5',
+            name: 'renxiaojuan5',
+            deptName: 'xxx',
+          },
+          {
+            ldap: 'renxiaojuan6',
+            name: 'renxiaojuan6',
+            deptName: 'xxx',
+          },
+          {
+            ldap: 'renxiaojuan7',
+            name: 'renxiaojuan7',
+            deptName: 'xxx',
+          },
+        ],
+        source: {},
+      },
+      code: 0,
+      msg: 'success',
     });
   }
 
@@ -141,7 +151,7 @@ export class ExperienceOrderService {
       })
       .then((comments) => {
         return this.experienceOrderRepository.findOne(id).then((res) => {
-          return {
+          const data = {
             ...res,
             system: {
               id: 10,
@@ -156,6 +166,11 @@ export class ExperienceOrderService {
             },
             comments: comments,
           };
+          return {
+            code: 0,
+            msg: 'success',
+            data: data,
+          };
         });
       });
   }
@@ -164,7 +179,11 @@ export class ExperienceOrderService {
     return this.experienceOrderRepository
       .update(id, updateExperienceOrderDto)
       .then(({ affected }) => {
-        return affected ? 'success' : 'failed';
+        return {
+          code: 0,
+          msg: affected ? 'success' : 'failed',
+          data: null,
+        };
       });
   }
 
