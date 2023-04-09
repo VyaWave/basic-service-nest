@@ -7,3 +7,4 @@ tmp/
 temp/
 logs/
 /dist
+src/config/dev.config.ts
