@@ -169,6 +169,16 @@ const Login = () => {
           <p className={styles.title}>You Success Login!</p>
         )}
       </main>
+      <p
+        style={{
+          textAlign: 'center',
+          color: '#3796f4',
+          zIndex: '100',
+          paddingBottom: '10px',
+        }}
+      >
+        <a href="https://beian.miit.gov.cn/">豫ICP备19002975号-4</a>
+      </p>
     </div>
   );
 };
